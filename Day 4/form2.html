@@ -6,6 +6,40 @@
     <title>form 2</title>
 </head>
 <body>
-    
+    <form action="/action">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" >
+            <option selected disabled>Gender</option>
+            <option value="male">Male</option>
+            <option value=" female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <!-- type submit is default behavior of button -->
+        <button type="submit">Submit</button>
+
+        <!-- reset type is used to clear the form -->
+        <button type="reset">Reset</button>
+
+        <!-- button type is used for custom button behavior -->
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+        <hr>
+        <!-- input type submit is used to submit the form. it is another way to submit a form-->
+        <input type="submit">
+        <input type="reset" value="Clear">
+    </form>
 </body>
 </html>
