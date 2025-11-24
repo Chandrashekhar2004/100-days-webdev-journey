@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input element in Html</title>
+</head>
+
+<body>
+    <form action="/server">
+        <!-- Radio buttons for selecting favorite fruit -->
+        <div>
+
+            <label>Select your favorite fruit:</label><br>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+            <input type="radio" name="fruit" id="orange" value="orange">
+            <label for="orange">Orange</label>
+            <input type="radio" name="fruit" id="grape" value="grape">
+            <label for="grape">Grape</label>
+        </div>
+        <br><br>
+        <!-- Checkboxes for selecting subjects -->
+        <div>
+            choose your subjects:<br>
+
+            <input type="checkbox" name="subject" id="math" value="math">
+            <label for="math">Math</label>
+
+            <input type="checkbox" name="subject" id="science" value="science">
+            <label for="science">Science</label>
+
+            <input type="checkbox" name="subject" id="english" value="english">
+            <label for="english">English</label>
+
+            <input type="checkbox" name="subject" id="economics" value="economics">
+            <label for="economics">Economics</label>
+        </div>
+        <button type="submit">Submit</button>
+        <hr>
+        <!-- select -->
+        <label for="age">Select your age</label>
+         <select name="age" id="age">
+            <option selected disabled>Select age</option>
+            <option value="below18">Below 18</option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46above">46 and above</option>
+        </select>
+        <br><br>
+        <!-- Range -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+
+        <!-- Text Area -->
+        <br><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>    
+
+
+    </form>
+    
+       
+</body>
+
+</html>
