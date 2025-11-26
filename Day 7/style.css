@@ -36,4 +36,14 @@ div > input{
     background-color: lightsteelblue;
     color: white;
 }
+/* attribute selector */
+input[type=text]{
+    color: chartreuse;
+}
+input[type=password]{
+    color: orange;
+}
 
+div[id="myId"] p{
+    color: green;
+}
