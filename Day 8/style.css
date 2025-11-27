@@ -22,3 +22,11 @@ button:hover{
 p:nth-of-type(odd){
     color: yellow;
 }
+
+.heading::first-letter{
+    color:red;
+}
+
+#yes:checked + label {
+    color: darkgreen;
+}
