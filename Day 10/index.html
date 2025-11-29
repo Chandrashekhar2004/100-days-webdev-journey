@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 10 - CSS box model</title>
+    <title>Test</title>
+
+    <style>
+        #outer {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            width: 200px;
+            height: 350px;
+            background-color: rgb(84, 189, 224);
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 87, 51);
+            margin: 5px auto;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+    <div id="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+
 </body>
+
 </html>
