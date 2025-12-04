@@ -1,4 +1,3 @@
-/* MAIN GRID */
 .container {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
@@ -9,7 +8,7 @@
     background: #e9e9e9;
 }
 
-/* DIRECT GRID POSITIONING */
+
 .header {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -49,8 +48,6 @@
 }
 
 
-
-/* INNER BOXES */
 .box {
     background: #93c5fd;
     border: 2px solid #2563eb;
@@ -60,7 +57,7 @@
     font-weight: bold;
 }
 
-/* Different spans for practice */
+
 .box1 {
     grid-column: span 2;
 }
@@ -69,13 +66,10 @@
     grid-row: span 2;
 }
 
-/* .box5 {
-    grid-column: span 3;
-} */
+
 
 .footer {
     grid-column: 1 / 4;
-    /* grid-row: 6 / 7; */
     background: #1f2937;
     color: white;
     display: grid;
