@@ -1,0 +1,31 @@
+.grid-container{
+    width: 600px;
+    height: 400px;
+    background-color: lime;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    
+}
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    border: 2px solid black;
+    text-align: center;
+}
+.one{
+    align-self: flex-start;
+    justify-self: start;
+}
+
+.two{
+    align-self:end;
+    justify-self: end;
+}
+b{
+    font-size: 25px;
+}
