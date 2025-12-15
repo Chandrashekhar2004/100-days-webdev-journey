@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM Using HTML and CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Student Registration Form</h2>
+            <label for="rollno">Roll Number:</label>
+            <input type="number" placeholder="Enter your roll number" id="rollno">
+            <br><br>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="First name" id="name">
+            <label for="name">-</label>
+            <input type="text" placeholder="Last name" id="name">
+            <br><br>
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName">
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number" id="phone">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="email">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter your password" id="password">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="department">Department:</label>
+            <input type="checkbox" id="cse" name="department" value="cse">
+            <label for="cse">CSE</label>
+            <input type="checkbox" id="mech" name="department" value="mech">
+            <label for="mech">MECH</label>
+            <input type="checkbox" id="civil" name="department" value="civil">
+            <label for="civil">CIVIL</label>
+            <input type="checkbox" id="eee" name="department" value="eee">
+            <label for="eee">EEE</label>
+            <input type="checkbox" id="it" name="department" value="it">
+            <label for="it">IT</label>
+            <br><br>
+            <label for="course">Course:</label>
+            <select id="course">
+                <option value="">*******Select Course*********</option>
+                <option value="cse">Computer Science Engineering</option>
+                <option value="mech">Mechanical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+            </select>
+            <br><br>
+            <label for="photo">Student Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
