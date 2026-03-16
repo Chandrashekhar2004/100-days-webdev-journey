@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#c0cce9;
+    color:#1f2937;
+}
+
+/* headings */
+
+h1{
+    font-size:42px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+h2{
+    margin-bottom:40px;
+    font-weight:400;
+    color:#6b7280;
+}
+
+/* container */
+
+.btn-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.line-one,
+.line-two{
+    display:flex;
+    gap:20px;
+}
+
+/* buttons */
+
+.btn{
+    height:160px;
+    width:160px;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.08);
+
+}
+
+/* hover */
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 28px rgba(0,0,0,0.12);
+}
+
+/* press */
+
+.btn:active{
+    transform:scale(0.94);
+}
+
+/* button colors */
+
+.red{
+    background:#ef4444;
+    color:white;
+}
+
+.yellow{
+    background:#facc15;
+    color:#333;
+}
+
+.green{
+    background:#22c55e;
+    color:white;
+}
+
+.purple{
+    background:#8b5cf6;
+    color:white;
+}
+
+/* simon flash */
+
+.flash{
+    background:white !important;
+    box-shadow:0 0 30px rgba(255,255,255,0.9);
+}
+
+/* user click */
+
+.userflash{
+    filter:brightness(0.85);
+}
+
+/* responsive */
+
+@media (max-width:600px){
+
+    .btn{
+        height:120px;
+        width:120px;
+        font-size:20px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+}
