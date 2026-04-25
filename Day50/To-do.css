@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #1e1e1e; /* dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+div {
+    background: #2a2a2a;
+    padding: 25px 20px;
+    border-radius: 15px;
+    width: 380px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Input + Add Button Row */
+#taskInput {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #3a3a3a;
+    color: white;
+}
+
+button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px 3px;
+    transition: 0.3s;
+}
+
+/* Add Button */
+#button {
+    background: #4CAF50;
+    color: white;
+}
+
+#button:hover {
+    background: #43a047;
+}
+
+/* Filter Buttons */
+#all {
+    background: #2196F3;
+    color: white;
+}
+
+#completed {
+    background: #9C27B0;
+    color: white;
+}
+
+#pending {
+    background: #FF9800;
+    color: white;
+}
+
+#all:hover { background: #1976D2; }
+#completed:hover { background: #7B1FA2; }
+#pending:hover { background: #F57C00; }
+
+/* Task List */
+ul {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+}
+
+
+/* Task Item */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    width: 100%;           
+    box-sizing: border-box; 
+
+    background: #3a3a3a;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+
+    text-align: left;       
+}
+/* Hover */
+li:hover {
+    background: #444;
+}
+
+/* Checkbox */
+li input[type="checkbox"] {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+
+/* Task Text */
+li span {
+    flex: 1;
+    text-align: left;
+}
+/* Completed Task */
+.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
